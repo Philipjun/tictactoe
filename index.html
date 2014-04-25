@@ -44,9 +44,21 @@ $('td').click(function() {
  //$(this).text('X');
  if (turn %2) {
     $(this).text('X');
-    $(this).css("background-color", "black");
+    $(this).css("background-color", "#02324F");
+    $(this).animate({
+      opacity: 0.5,
+    }, 5000, function(){
+
+    });
+  
   } else {
     $(this).text('O');
+    $(this).css("background-color", "red");
+     $(this).animate({
+      opacity: 0.5,
+    }, 5000, function(){
+
+    });
   }
   turn ++
   $(this).off("click");
