@@ -37,6 +37,20 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script type="text/javascript">
 
+var player1 = {
+  mark: 'X',
+  name: 'Player 1',
+  score_el: 'player1_wins',
+  wins: 0};
+
+var player2 = {
+  mark: 'O',
+  name: 'Player 2',
+  score_el: 'player2_wins',
+  wins: 0
+};
+
+
 
 
 // $document.ready(function changeTurn(){
@@ -49,25 +63,25 @@
 // });
 
 
-var nextTurn ='X'
+// var nextTurn ='X'
 
-if (this.id =="c1")
-{
-  if document.getElementById("c1").innerHTML == ""){
-    document.getElementById("c1").innerHTML == nextTurn;
-      changeTurn();
-  }
+// if (this.id =="c1")
+// {
+//   if document.getElementById("c1").innerHTML == ""){
+//     document.getElementById("c1").innerHTML == nextTurn;
+//       changeTurn();
+//   }
 
-}
+// }
 
-function changeTurn(){
-  if(nextTurn == 'X'){
-    nextTurn = 'O';
-  } else {
-    nextTurn = 'X';
-  }
+// function changeTurn(){
+//   if(nextTurn == 'X'){
+//     nextTurn = 'O';
+//   } else {
+//     nextTurn = 'X';
+//   }
 
-}
+// }
 
 
 </script>
