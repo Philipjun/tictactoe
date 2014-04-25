@@ -44,17 +44,23 @@ $('td').click(function() {
  //$(this).text('X');
  if (turn %2) {
     $(this).text('X');
+    $(this).css("background-color", "black");
   } else {
     $(this).text('O');
   }
- turn ++
-
-$(this).off("click");
-
+  turn ++
+  $(this).off("click");
 });
 
+// $('td').each(function() {
+//   if ($(this).text == "x") {
+//     $(this).css("background-color", "black");    
+//   }
+// });
 
+// $('td').has('X').css("background-color", "black");
 
+// });
 
 
 // var player1 = {
