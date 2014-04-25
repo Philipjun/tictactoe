@@ -1,14 +1,29 @@
 *{
   font-family: Helvetica;
   color: #023859;
+  font-size: 1.5em;
+  background-color: #;
 }
 
-#c1{
-  background-color: white;
+td{
+  background-color: #0468A6;
+}
+
+table, td {
+  border: 1px solid black;
 }
 
 .title{
   font-size: 100px;
   font-style: italic;
 
+}
+td:hover {
+      cursor: pointer;
+      background-color: #78ABBF;
+    }
+
+.caption{
+  font-size: 60px;
+  color: #048ABF;
 }

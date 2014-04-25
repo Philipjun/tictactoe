@@ -4,50 +4,74 @@
 
 
 <body>
-<div class="title">Tic Tac Toe</div>
+<div class="title"><center>Tic Tac Toe</center></div>
 
   <head>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
+<center>
 
 <table border="1" cellpadding ="120px">
-
+<div class="caption">Your turn, X</div>
   <tbody>
     <tr>
-      <td id="c1"></td>
-      <td id="c2"></td>
-      <td id="c3"></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>  
     <tr>
-      <td id="c4"></td>
-      <td id="c5"></td>
-      <td id="c6"></td>
-    </tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>  
     <tr>
-      <td id="c7"></td>
-      <td id="c8"></td>
-      <td id="c9"></td>
-    </tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>  
 
   </tobody>
 </table>
+</center>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript">
 
 
 
- <script>
+// $document.ready(function changeTurn(){
+//   if(nextTurn == 'X'){
+//     nextTurn = 'O';
+//   } else {
+//     nextTurn = 'X';
+//   }
+
+// });
+
 
 var nextTurn ='X'
 
 if (this.id =="c1")
 {
-  if document.getElementById("c1").innerHTML ==""{
+  if document.getElementById("c1").innerHTML == ""){
     document.getElementById("c1").innerHTML == nextTurn;
       changeTurn();
   }
 
 }
 
- </script>
+function changeTurn(){
+  if(nextTurn == 'X'){
+    nextTurn = 'O';
+  } else {
+    nextTurn = 'X';
+  }
+
+}
+
+
+</script>
+
 
 </body>
 </html>
