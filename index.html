@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+
+
+<body>
+<div class="title">Tic Tac Toe</div>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+
+<table border="1" cellpadding ="120px">
+
+  <tbody>
+    <tr>
+      <td id="c1"></td>
+      <td id="c2"></td>
+      <td id="c3"></td>
+    </tr>  
+    <tr>
+      <td id="c4"></td>
+      <td id="c5"></td>
+      <td id="c6"></td>
+    </tr>
+    <tr>
+      <td id="c7"></td>
+      <td id="c8"></td>
+      <td id="c9"></td>
+    </tr>
+
+  </tobody>
+</table>
+
+
+
+ <script>
+
+var nextTurn ='X'
+
+if (this.id =="c1")
+{
+  if document.getElementById("c1").innerHTML ==""{
+    document.getElementById("c1").innerHTML == nextTurn;
+      changeTurn();
+  }
+
+}
+
+ </script>
+
+</body>
+</html>
