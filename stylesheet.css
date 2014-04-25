@@ -7,6 +7,8 @@
 
 td{
   background-color: #0468A6;
+  font-size: 20px;
+  
 }
 
 table, td {
@@ -23,7 +25,10 @@ td:hover {
       background-color: #78ABBF;
     }
 
+
+
 .caption{
   font-size: 60px;
   color: #048ABF;
 }
+

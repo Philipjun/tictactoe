@@ -10,8 +10,8 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
 <center>
-
-<table border="1" cellpadding ="120px">
+<div id="game_map">
+<table border="1" cellpadding ="100px">
 <div class="caption">Your turn, X</div>
   <tbody>
     <tr>
@@ -32,35 +32,56 @@
 
   </tobody>
 </table>
+</div>
 </center>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script type="text/javascript">
 
-var player1 = {
-  mark: 'X',
-  name: 'Player 1',
-  score_el: 'player1_wins',
-  wins: 0};
+var turn = 1
 
-var player2 = {
-  mark: 'O',
-  name: 'Player 2',
-  score_el: 'player2_wins',
-  wins: 0
-};
+$('td').click(function() {
+ //$(this).text('X');
+ if (turn %2) {
+    $(this).text('X');
+  } else {
+    $(this).text('O');
+  }
+ turn ++
+
+$(this).off("click");
+
+});
 
 
 
 
-// $document.ready(function changeTurn(){
-//   if(nextTurn == 'X'){
-//     nextTurn = 'O';
-//   } else {
-//     nextTurn = 'X';
-//   }
 
-// });
+// var player1 = {
+//   mark: 'X',
+//   name: 'Player 1',
+//   score_el: 'player1_wins',
+//   wins: 0};
+
+// var player2 = {
+//   mark: 'O',
+//   name: 'Player 2',
+//   score_el: 'player2_wins',
+//   wins: 0
+// };
+
+// var players= [player1, player2];
+// var current_player =0;
+
+// }
+
+// $("game_map")
+// .bind("click", playMove)
+// .bind('mouseover', hoverCell)
+// .bind('mouseout', leaveCell);
+
+
+
 
 
 // var nextTurn ='X'
